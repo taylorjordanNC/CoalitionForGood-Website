@@ -1,0 +1,120 @@
+.shadow-container {
+    box-shadow: 0 0 5px $color-secondary-dark2;
+}
+
+.dropdown {
+    position: relative;
+    overflow: visible;
+    z-index: 150;
+
+    &__content{
+        display: none;
+        position: absolute;
+        transition: all .2s;
+        list-style: none;
+    }
+
+    &__btn{
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+
+    &:hover &__content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.header__dropdown{
+    width: 60%;
+    transform: translateX(6.5rem);
+    text-align: center;
+}
+
+.stickynav{
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 2px $color-grey-dark;
+    background-color: rgba($color-primary-dark1, .8);
+    z-index: 1000;
+
+    &__bar{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        list-style: none;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+
+        .not-home{
+            align-self: center;
+            justify-self: center;
+            transition: all .2s;
+
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+
+        .home {
+            align-self: center;
+            justify-self: center;
+        }
+        
+        &--btn{
+            text-decoration: none;
+            color: $color-grey-light;
+            text-shadow: 0 0 3px $color-grey-dark;
+            letter-spacing: 1.5px;
+        }
+
+        &--dropdown{
+            &-menu{
+                list-style: none;
+                box-shadow: 0 0 4px $color-primary-dark2;
+                background-color: rgba($color-primary-dark1, .6);
+
+                li{
+                    padding: 2rem;
+                    font-size: 2rem;
+                }
+                &-btn{
+                    text-decoration: none;
+                    color: $color-grey-light;
+                    text-shadow: 0 0 3px $color-grey-dark;
+                }
+            }
+        }
+    }
+
+    &__social{
+        grid-column: 6 / -1;
+        justify-self: center;
+        align-self: center;
+    
+        &--icon{
+            padding: 1rem;
+            transition: all .2s;
+
+            &:hover,
+            &:active {
+                transform: scale(1.15);
+            } 
+        }
+    }
+}
+
+.sticky__ionicon{
+    fill: $color-grey-light;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.no-display {
+    display: none;
+}
+
+.gallery-filter{
+    filter: blur(1.5px) brightness(65%);
+}
+

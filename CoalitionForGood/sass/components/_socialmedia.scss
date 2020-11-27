@@ -1,0 +1,19 @@
+.icon__bar{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 20;
+    padding-right: 1.5rem;
+}
+
+.icon {
+    padding: 1rem;
+
+    &__link{
+        fill: $color-primary;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+}

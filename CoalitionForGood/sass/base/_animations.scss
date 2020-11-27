@@ -1,0 +1,33 @@
+@keyframes slideInUp {
+    0% {
+        transform: translateY(0%);
+      }
+    
+    100% {
+        transform: translateY(100%);
+      }
+}
+
+
+.js--ethos-header,
+.js--ethos-content,
+.js--gallery-header,
+.js--projects-content,
+.js--mission-content {
+  opacity: 0;
+}
+
+.animate__fadeIn {
+  opacity: 1;
+  animation-duration: 1s;
+}
+
+.animate__slideInLeft{
+  opacity: 1;
+  animation-duration: 1s;
+}
+
+.animate__fadeInUp{
+  opacity: 1;
+  animation-duration: 1s;
+}

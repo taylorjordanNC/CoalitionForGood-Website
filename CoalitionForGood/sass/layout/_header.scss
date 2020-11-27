@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    padding-bottom: 3rem;
+    background-color: $color-grey-light;
+    
+    &__banner {
+        width: 100%;
+        padding: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        background-image: linear-gradient(rgba($color-grey-light, .40), rgba($color-grey-light, .40)), url(/img/2020-globe-revised-1200px-1018x1024-min.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        h1{
+            animation-duration: 2s;
+        }
+    }
+}
+

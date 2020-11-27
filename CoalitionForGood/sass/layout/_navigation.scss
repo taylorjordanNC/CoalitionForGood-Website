@@ -1,0 +1,45 @@
+.nav{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding-bottom: 2rem;
+
+    &__header{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+            
+    &--item {    
+        color: $color-primary;
+        align-self: center;
+        display: grid;
+        grid-row: 1fr;
+        grid-column: 1fr;
+        margin: auto;
+        text-align: center;
+        min-width: max-content;
+        width: 70%;
+        }
+    }
+}
+
+.home-btn {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    .arrow {
+        padding-left: 1rem;
+        transition: all .3s;
+    }
+
+    &:hover .arrow{
+        transform: scale(1.5);
+    }
+}

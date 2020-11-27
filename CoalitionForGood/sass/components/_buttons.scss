@@ -1,0 +1,60 @@
+.btn {
+    
+    &__small{
+        border: solid 1.5px $color-grey-light;
+        width: max-content;
+        padding: 1rem;
+        justify-self: center;
+        transition: all .2s;
+
+        &:hover{
+            background-color: $color-grey-light;
+            border: solid 1.5px $color-primary-dark1;
+            color: $color-primary-dark1;
+        }
+    }
+
+    &__large{
+        padding: 2rem;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: $color-primary;
+        text-transform: uppercase;
+        transition: all .2s;
+        border: solid 1.5px transparent;
+
+        &:hover,
+        &:active {
+            background-color: $color-primary-light;
+            box-shadow: 0 0 3px $color-primary-dark1;
+            color: white;
+            border: none;
+            text-shadow: none;
+            border: solid 1.5px $color-primary-dark1;
+        }
+    }
+
+    &__dropdown{
+        background-color: $color-primary-light;
+        box-shadow: 0 0 3px $color-primary-dark1;
+        color: white;
+        border: none;
+        text-shadow: none;
+        border: solid 1.5px $color-primary-dark1;
+
+        padding: 2rem;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-grey-light;
+            color: $color-primary;
+            text-shadow: 0 0 1px $color-grey-dark;
+        }
+
+    }
+}
