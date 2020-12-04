@@ -6,6 +6,13 @@ body {
     color: $color-primary;
     text-shadow: 0 0 1px $color-primary-dark2;
     font-size: 7.5rem;
+
+    @include respond(tab-port){
+        font-size: 6rem;
+    }
+    @include respond(phone){
+        font-size: 4.2rem;
+    }
 }
 
 .heading-2 {
@@ -21,7 +28,12 @@ body {
         text-shadow: 0 0 3px $color-grey-dark;
         font-size: 2.5rem;
         padding: 0 1rem;
+
+        &:last-of-type{
+            padding-left: 0;
+        }
     }
+
 }
 
 .bold {

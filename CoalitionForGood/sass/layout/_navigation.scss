@@ -21,25 +21,12 @@
         text-align: center;
         min-width: max-content;
         width: 70%;
+        font-size: 2.5rem;
+
+        @include respond(phone){
+            font-size: 2rem;
+        }
         }
     }
 }
 
-.home-btn {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    text-decoration: none;
-    text-transform: uppercase;
-    
-    .arrow {
-        padding-left: 1rem;
-        transition: all .3s;
-    }
-
-    &:hover .arrow{
-        transform: scale(1.5);
-    }
-}

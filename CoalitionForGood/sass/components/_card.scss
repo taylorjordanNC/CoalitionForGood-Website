@@ -2,14 +2,14 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 45vh;
+    height: 63vh;
 
     &__side {
         transition: all .8s;
-        height: 60vh;
         position: absolute;
         top: 0;
         left: 0;
+        height: 100%;
         width: 100%;
         backface-visibility: hidden;
         border-radius: 3px;
@@ -21,6 +21,7 @@
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 1fr;
+            padding: 0 1rem;
             
             p{
                 grid-row: 1;
@@ -28,6 +29,10 @@
                 align-self: center;
                 color: $color-primary-dark2;
                 letter-spacing: 1.5px;
+            }
+
+            @include respond(tab-land){
+                font-size: 2.25rem;
             }
         }
 
@@ -53,6 +58,10 @@
                 text-decoration: none;
                 color: currentColor;
             }
+
+            @include respond(tab-land){
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -72,48 +81,13 @@
 
     &__side {
         transition: all .8s;
-        //height: 60vh;
         position: absolute;
-        // top: 0;
-        // left: 0;
-        //width: 100%;
         backface-visibility: hidden;
-        // border-radius: 3px;
-        // box-shadow: 0 1.5rem 4rem $color-primary-dark2;
-
-        // &--front{
-        //     //background-color: rgba($color-grey-light, .85);
-        //     //box-shadow: 0 1.5px 4px $color-primary-dark1;
-        //     display: grid;
-        //     grid-template-rows: 1fr;
-        //     grid-template-columns: 1fr;
-            
-        //     p{
-        //         grid-row: 1;
-        //         grid-column: 1;
-        //         align-self: center;
-        //         //color: $color-primary-dark2;
-        //         //letter-spacing: 1.5px;
-        //     }
-        // }
 
         &--back{
             font-size: 1.8rem;
-            //color: $color-grey-light;
             transform: rotateX(180deg);
-            //background-image: linear-gradient(to bottom right, rgba($color-primary-light, .9), rgba($color-primary-dark1, .9));
-            //padding: 1.2rem;
-            //padding-bottom: 2rem;
-            // display: grid;
-            // grid-template-rows: 1fr;
-            // grid-template-columns: 1fr;
-
-            // p{
-            //     grid-row: 1;
-            //     grid-column: 1;
-            //     align-self: center;
-            //     //line-height: 1.5;
-            // }
+            //background-image: linear-gradient(to bottom right, rgba($color-primary, .8), rgba($color-secondary, .8));
         }
     }
 

@@ -48,6 +48,11 @@
         letter-spacing: 2px;
         text-decoration: none;
 
+        @include respond(phone){
+            font-size: 2rem;
+            padding: 1.5rem;
+        }
+
         transition: all .2s;
 
         &:hover {
@@ -55,6 +60,26 @@
             color: $color-primary;
             text-shadow: 0 0 1px $color-grey-dark;
         }
+    }
+}
 
+.home-btn {
+    grid-row: 1;
+    grid-column: 1;
+    padding: 2rem;
+    justify-content: center;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    .arrow {
+        grid-row: 1;
+        grid-column: 2;
+        padding-left: 1rem;
+        transition: all .3s;
+    }
+
+    &:hover .arrow{
+        transform: scale(1.5);
     }
 }
